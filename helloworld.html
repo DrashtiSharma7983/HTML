@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Code</title>
-    </head>
-    <body>
-       <h1>List of fruits</h1>
-       <ul>
-        <li>Apple <a href="https://img.freepik.com/free-vector/red-apple-with-happy-face_1308-9211.jpg"> see an apple</a></li>
-        <li>Orange<a href="https://cdn.pixabay.com/photo/2019/10/13/20/35/orange-4547207_640.png">see an orange</a></li>
-        <li>Mango<a href="https://i.pinimg.com/736x/10/42/de/1042deed77f4a7b9859b39a9c95d14a0.jpg"> see a mango</a></li>
-    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="black">
+        <caption>
+            A test table with merged cells
+        </caption>
+       <tr>
+        <td rowspan="2"></td>
+        <td colspan="2">Average</td>
+        <td rowspan="2">Red eyes</td>
+        
+       </tr> 
+       <tr>
+        <td>Height</td>
+        <td>Weight</td>
+       </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+        
+    </table>   <hr>
+    <form action="/server">
+
+        <div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="type anything" id="username" name="username">
+        </div>
+        <div>
+            <label for="pass">Enter password</label>
+            <input type="password" id="password" placeholder="type password" name="pass"><br>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+
+        <input type="submit" value="Click me!">
+    </form> <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Submit</button>
+        <hr>
+        <input type="checkbox" id="age" name="age" checked>
+        <label for="age">I am 18+</label>
+    </form><hr>
+    <form action="/server">
+        <input type="radio" id="apple" name="fruit" value="apple">
+        <label for="apple">Apple</label>
+        <input type="radio" id="banana" name="fruit" value="banana">
+        <label for="banana">Banana</label>
+        <input type="radio" id="papaya" name="fruit" value="papaya">
+        <label for="papaya">Papaya</label>
+        
+
+        <div>
+            Choose your profession
+            <select name="profession" id="profession">
+                <option value="stu">Student</option>
+                <option value="dev" selected>Developer</option>
+            </select>
+        </div>
+        <label for="vol">Select your volume</label>
+        <input type="range" id="vol" min="0" max="200" name="vol">
+        <button>Submit</button>
+        <br>
+        <label for="msg">Enter your message</label>
+        <textarea name="msg" id="msg"></textarea>
+        <button>Submit</button>
+    </form>
+    <div>
+        <form action="/server">
+            <h1>Registration Form</h1>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name"><br>
+            <div>
+                Please selecct gender
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <div>
+                Do you agree to all term of service?
+                <input type="checkbox" name="agree" id="agree" >
+                <label for="agree">Yes, I agree</label>
+            </div>
+            <button>Register</button>
+        </div>
+        </form>
+    </div>
     </body>
 </html>
